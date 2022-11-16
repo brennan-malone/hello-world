@@ -22,19 +22,7 @@ h1 {
 body {
     background-color: #90E0EF;
 }
-.custImage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right; 
-    padding: 10px;
-}
-img {
-    max-width: 600px;
-    height: auto;
-    padding: 10px;
-    background-color: #0096C7;
-    border-radius: 15px;
-  }
+
 .topNav a {
     color: #3A0CA3;
     width: 600px;
@@ -56,13 +44,65 @@ main p {
     background-color: #ADE8F4;
     border-radius: 15px;
 }
+main p:hover {
+    box-shadow: 2px 2px 4px gray;
+}
 h3 {
     padding: 10px;
     background-color: #48CAE4;
     border-radius: 15px;
 }
+main h3:hover {
+    box-shadow: 2px 2px 4px gray;
+}
 footer {
     padding: 10px;
     background-color: #ADE8F4;
     border-radius: 15px;
+}
+.flexContainer {
+    display: flex; 
+    padding: 10px;
+    flex-direction: column;
+    align-content: space-between;
+}
+.flexContainerTestimony {
+    display: flex; 
+    padding: 10px;
+    flex-direction: row;
+    align-content: space-between;
+}
+.flexItem {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    background-color: #0096C7;
+    border-radius: 15px;
+  }
+#happyCust{
+    float: right;
+    box-shadow: 2px 2px 4px gray;
+}
+#photoCredits {
+    font-size: 1em;
+    max-width: 200;
+    text-align: right;
+}
+#badQuote{
+    float: left;
+    font-size: 2em;
+    max-width: 300px;
+    height: auto;
+    background-color: #CAF0F8;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px gray;
 }
