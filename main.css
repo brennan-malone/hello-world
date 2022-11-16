@@ -74,6 +74,7 @@ footer {
     flex-direction: row;
     align-content: space-between;
 }
+
 .flexItem {
     margin: 10px;
     text-align: center;
@@ -91,7 +92,7 @@ img {
     padding: 10px;
     background-color: #0096C7;
     border-radius: 4px;
-  }
+}
 #happyCust{
     float: right;
     box-shadow: 2px 2px 4px gray;
