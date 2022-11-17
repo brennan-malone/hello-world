@@ -6,31 +6,8 @@
 </head>
 
 <body>
-    <script>
-        alert('Hi welcome to my webpage, boy alerts are the worst!');        
-    </script>
-    <script>
-        let opinion = prompt('yes or no?')
-        console.log(opinion)
-        opinion = opinion.toLowerCase()
-        console.log(opinion)
-        if (opinion == "yes"){
-            document.write('<p>Yay!</p>')
-        }else if (opinion == "no"){
-            document.write('<p>Sadage</p>')
-        }else {
-            document.write('<p>what?</p>')
-        }
-    </script>
-    <script>
-        let secondOpinion = confirm('do you want to change your mind?')
-        console.log(secondOpinion)
-        if (secondOpinion == true){
-            document.write('<p>you changed your mind</p>')
-        } else {
-            document.write('<p>you did not change your mind</p>')
-        }
-    </script>
+    <script src="script.js"></script>
+
     <header>
         <h1>Malone Dental</h1>
         <nav class="topNav">
@@ -41,6 +18,10 @@
         </nav>
     </header>
     <main>
+        <input type="button" onclick="welcomePrompt()" value="Welcome Alert">
+        <input type="button" onclick="yesOrNo()" value="yes or no?">
+        <input type="button" onclick="changeMind()" value="Change Your Mind?">
+        <p id="changeMindResponse">You have not changed Your Mind Yet</p>
         <blockquote id="badQuote">Malone Dental is one of the most highly reprehensible dental practices in the
             NorthEast. -Some Guy</blockquote>
         <section class="flexContainer">
