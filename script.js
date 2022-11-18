@@ -1,6 +1,13 @@
 function welcomePrompt() {
-    alert('Welcome!');
-
+    let response = prompt('Are you excited? yes/no?')
+    while (response) {
+        if (response !== 'yes') {
+            console.log(response)
+            response = prompt('Cmon now, are you excited? yes?');
+            continue;
+        } else
+            break;
+    }
 }
 
 function yesOrNo() {
@@ -8,10 +15,10 @@ function yesOrNo() {
     console.log(opinion);
     opinion = opinion.toLowerCase();
     console.log(opinion);
-    
-    if (opinion === 'y' || 'yes') {
+
+    if (opinion === 'yes') {
         alert('Yay!');
-    } else if (opinion === 'n' || 'no') {
+    } else if (opinion === 'no') {
         alert('Sadage');
     } else {
         alert('What?');
@@ -28,5 +35,18 @@ function changeMind() {
         alert('You didn\'t Change Your Mind');
     }
     return;
+}
+
+
+function howManyPictures() {
+    let response = prompt('how many toothbrush images do you want?')
+
+    for (i = 0; i < response; ++i) {
+        const img = document.createElement("img");
+        img.src = 'toothbrush.jpg';
+        img.style.height = "100px";
+        img.style.width = "100px";
+        document.body.append(img);
+    }
 }
 
